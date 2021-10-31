@@ -1,8 +1,16 @@
 {
-  "FunctionName": "main",
-  "Handler": "index.handler",
+  "Architectures": [
+    "x86_64"
+  ],
+  "Description": "",
+  "FunctionName": "golang-lambda-hello-world",
+  "Handler": "handler",
   "MemorySize": 128,
   "Role": "{{ must_env `LAMBDA_ROLL` }}",
   "Runtime": "go1.x",
-  "Timeout": 3
+  "Tags": {},
+  "Timeout": 3,
+  "TracingConfig": {
+    "Mode": "PassThrough"
+  }
 }
