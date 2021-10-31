@@ -1,0 +1,8 @@
+{
+  "FunctionName": "main",
+  "Handler": "index.handler",
+  "MemorySize": 128,
+  "Role": "{{ must_env `LAMBDA_ROLL` }}",
+  "Runtime": "go1.x",
+  "Timeout": 3
+}
